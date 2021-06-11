@@ -1,0 +1,101 @@
+body{
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    height: 46px;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%),
+                0 2px 10px 0 rgb(0 0 0 / 12%);;
+}
+
+header a i{
+    float: right;
+    padding: 12px 24px;
+    position: relative;
+    top: -45px;
+    color: #FE5E41;
+}
+
+a i:hover{
+    background-color: #FE5E41;
+}
+ul{
+    display: flex;
+
+}
+header ul li{
+    padding: 12px 24px;
+    
+
+}
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+
+}
+#moreBTN {
+    position: relative;
+    display: inline-block;
+}
+#moreBTN button{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    white-space: normal;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    padding: 12px 24px;
+    position: relative;
+    height: 46px;
+
+
+}
+#moreBTN i{
+    color: #fff;
+    position: relative;
+}
+
+header ul li:hover{
+    background-color: #D7D1DC;
+}
+ul button:hover{
+    background-color: #D7D1DC;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 
+                0 4px 20px 0 rgb(0 0 0 / 19%);
+
+}
+
+#dropdown{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+#dropdown a{
+    color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+#dropdown a:hover{
+    background-color: #D7D1DC;
+}
+
+#moreBTN:hover #dropdown {display: block;}
+
+#moreBTN:hover button {background-color: #D7D1DC;}
+
